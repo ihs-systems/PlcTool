@@ -3,6 +3,13 @@
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>netcoreapp3.1</TargetFramework>
+    <ApplicationIcon>app.ico</ApplicationIcon>
   </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="S7.Net">
+      <HintPath>bin\S7.net\Debug\netstandard2.0\S7.Net.dll</HintPath>
+    </Reference>
+  </ItemGroup>
 
 </Project>

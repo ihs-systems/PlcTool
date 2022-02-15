@@ -8,7 +8,7 @@
 
   <ItemGroup>
     <Reference Include="S7.Net">
-      <HintPath>bin\S7.net\Debug\netstandard2.0\S7.Net.dll</HintPath>
+      <HintPath>..\Lib\S7.Net.dll</HintPath>
     </Reference>
   </ItemGroup>
 

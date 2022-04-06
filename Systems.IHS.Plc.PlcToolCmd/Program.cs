@@ -10,6 +10,11 @@ namespace Systems.IHS.Plc.PlcToolCmd
 
         static void Main(string[] args)
         {
+
+            var environment = Environment.GetEnvironmentVariable("NETCORE_ENVIRONMENT");
+            //Console.WriteLine(environment);
+
+
             var fn = Helper.CheckFilePath(args);
 
             string file = System.IO.File.ReadAllText(fn);
@@ -57,7 +62,10 @@ namespace Systems.IHS.Plc.PlcToolCmd
             PLC.Close();
 
             Console.WriteLine("Done");
-            Console.ReadLine();
+            if (environment == "Development")
+            {
+                Console.ReadLine();
+            }
         }
 
     }

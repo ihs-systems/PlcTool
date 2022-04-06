@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "Systems.IHS.Plc.PlcToolCmd": {
+      "commandName": "Project",
+      "environmentVariables": {
+        "NETCORE_ENVIRONMENT": "Development"
+      }
+    }
+  }
+}
